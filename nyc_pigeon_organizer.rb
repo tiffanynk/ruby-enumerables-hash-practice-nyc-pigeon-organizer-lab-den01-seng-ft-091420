@@ -15,6 +15,6 @@ def nyc_pigeon_organizer(data)
         end
         organized_pigeon[name][key].push[new_value.to_s]
       end
-    end  
+    end
   end
 end
