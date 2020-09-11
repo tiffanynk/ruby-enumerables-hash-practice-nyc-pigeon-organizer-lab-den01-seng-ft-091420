@@ -9,13 +9,12 @@ def nyc_pigeon_organizer(data)
 
         if !organized_pigeon[name]
           organized_pigeon[name] = {}
+        end
+        if !organized_pigeon[name][key]
+          !organized_pigeon[name][key] = []
+        end
+        organized_pigeon[name][key].push[new_value.to_s]
       end
-      if !organized_pigeon[name][key]
-        !organized_pigeon[name][key] = []
-    end
-    organized_pigeon[name][key].push[new_value.to_s]
+    end  
   end
-    organized_pigeon
-  end
-  binding.pry
 end
